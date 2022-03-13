@@ -7,8 +7,7 @@ const News = (props) => {
     const [newsArticles, setNewsArticles] = useState([]);
     const { category, setProgress } = props;
 
-    //const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`
-    const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=4827ddf211074a288d564e7217c38b11`
+    const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`
 
 
     const updateNews = () => {
@@ -19,7 +18,6 @@ const News = (props) => {
                 return response.json()
             })
             .then((data) => {
-                console.log(data.articles);
                 setProgress(70);
                 setNewsArticles(data.articles);
                 setProgress(100);
