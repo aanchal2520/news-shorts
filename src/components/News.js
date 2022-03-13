@@ -19,6 +19,7 @@ const News = (props) => {
             .then((data) => {
                 setProgress(70);
                 setNewsArticles(data.articles);
+                console.log(data.articles);
                 setProgress(100);
             })
     }
