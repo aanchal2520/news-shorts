@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './components/Header';
 import './App.css';
+import NewsMenu from './components/NewsMenu';
+import LoadingBar from 'react-top-loading-bar'
 
 function App() {
+  const [progress, setProgress] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <LoadingBar
+        height={4}
+        color='#f11946'
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
+      <NewsMenu setProgress={setProgress} />
+      {/* <News /> */}
     </div>
   );
 }
