@@ -19,9 +19,9 @@ const News = (props) => {
                 return response.json()
             })
             .then((data) => {
+                console.log(data.articles);
                 setProgress(70);
                 setNewsArticles(data.articles);
-                console.log(data.articles);
                 setProgress(100);
             })
     }
