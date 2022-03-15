@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# NEWS - SHORTS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Description
+NEWS INSHORTS is a news application which uses newsapi.org. This application provides its users with top headlines all at the same place. It also comes with various categories option so that the reader can choose the category of their interest and get updated on their daily news.
 
-## Available Scripts
+### Tech Stack used:
+1. React.js - Frontend.
+2. Material UI - Design.
 
-In the project directory, you can run:
+### Instructions to Install and run the application:
+1. Visit newsapi.org. Create an account and setup you API key.
+2. Clone this project on your local system.
+3. Run `npm install` on the terminal.
+4. Add you API key in News.js under the src/components folder. You can also create a .env file and add the `REACT_APP_API_KEY = <YOUR_API_KEY>`
+5. Run `npm start`
+With these steps, your application will start running at **localhost:3000**.
 
-### `npm start`
+### How to use the project:
+As soon as the app launches on your localhost, the first page will look something like this.
+<img width="960" alt="homescreen" src="https://user-images.githubusercontent.com/70476797/158396081-e2e2855e-b3ba-44fc-a2a4-2752e9d997c4.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You Can choose any of the different news categories based on your preference. You will be able to see these catrgories in the application:
+<img width="487" alt="Categories Bar" src="https://user-images.githubusercontent.com/70476797/158396615-2cb41679-b534-499e-9d3c-e26e78338e89.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For Example, this is the sports category:
+<img width="960" alt="sports" src="https://user-images.githubusercontent.com/70476797/158396951-dff27951-ab8b-4a30-8a3d-b3b860b62cec.png">
